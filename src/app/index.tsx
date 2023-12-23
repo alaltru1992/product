@@ -1,9 +1,9 @@
-import {Suspense, useContext, useState} from "react";
+import {Suspense} from "react";
 import {Route, Routes, Link} from 'react-router-dom'
-import {AboutPageLazy} from "../AboutPageLazy";
-import {MainPageLazy} from "../MainPageLazy";
-import {useTheme} from "../../themes/useTheme";
-import '../styles/index.scss';
+import {AboutPageLazy} from "pages/AboutPageLazy";
+import {MainPageLazy} from "pages/MainPageLazy";
+import {useTheme} from "themes/useTheme";
+import './styles/index.scss';
 
 export default () =>{
      const {theme, toggleTheme} = useTheme();
