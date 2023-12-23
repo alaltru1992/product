@@ -1,7 +1,7 @@
 import {Suspense} from "react";
 import {Route, Routes, Link} from 'react-router-dom'
-import {AboutPageLazy} from "pages/AboutPageLazy";
-import {MainPageLazy} from "pages/MainPageLazy";
+import {AboutPage} from "pages/AboutPage";
+import {MainPage} from "pages/MainPage";
 import {useTheme} from "app/providers/ThemeProvider";
 import './styles/index.scss';
 
@@ -16,8 +16,8 @@ export default () =>{
         <Link to={'./about'}>About</Link>
         <Suspense fallback='Loading...'>
             <Routes>
-                <Route path={'/'} element={<MainPageLazy />}/>
-                <Route path={'/about'} element={<AboutPageLazy />}/>
+                <Route path={'/'} element={<MainPage />}/>
+                <Route path={'/about'} element={<AboutPage />}/>
             </Routes>
         </Suspense>
     </div>
