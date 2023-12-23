@@ -2,7 +2,7 @@ import {Suspense} from "react";
 import {Route, Routes, Link} from 'react-router-dom'
 import {AboutPageLazy} from "pages/AboutPageLazy";
 import {MainPageLazy} from "pages/MainPageLazy";
-import {useTheme} from "themes/useTheme";
+import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
 import './styles/index.scss';
 
 export default () =>{
