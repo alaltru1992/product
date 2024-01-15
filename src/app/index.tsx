@@ -3,6 +3,7 @@ import {Route, Routes, Link} from 'react-router-dom'
 import {AboutPage} from "pages/AboutPage";
 import {MainPage} from "pages/MainPage";
 import {useTheme} from "app/providers/ThemeProvider";
+import {AppRouter} from 'app/providers/router'
 import './styles/index.scss';
 
 export default () =>{
@@ -14,11 +15,6 @@ export default () =>{
         <button onClick={toggleTheme}>TOGGLE</button>
         <Link to={'./'}>Main</Link>
         <Link to={'./about'}>About</Link>
-        <Suspense fallback='Loading...'>
-            <Routes>
-                <Route path={'/'} element={<MainPage />}/>
-                <Route path={'/about'} element={<AboutPage />}/>
-            </Routes>
-        </Suspense>
+        <AppRouter />
     </div>
 }
