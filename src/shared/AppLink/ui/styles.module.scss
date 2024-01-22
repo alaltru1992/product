@@ -1,0 +1,9 @@
+.appLink{
+  margin: 15px;
+  &_primary{
+    color: green;
+  }
+  &_secondary{
+    color: red;
+  }
+}

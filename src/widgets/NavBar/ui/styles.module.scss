@@ -1,0 +1,12 @@
+.nav{
+  width: 100%;
+  height: var(--navbar-height);
+  padding: 20px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  background: var(--bg-color-reverted);
+  &_links{
+    margin-left: auto;
+  }
+}
